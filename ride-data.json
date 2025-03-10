@@ -1,0 +1,530 @@
+{
+  "updatedAt": "2025-03-09T16:00:00.000Z",
+  "dca": {
+    "lands": [
+      {
+        "id": 890,
+        "name": "Avengers Campus",
+        "rides": [
+          {
+            "id": 329,
+            "name": "Guardians of the Galaxy - Mission: BREAKOUT!",
+            "history": []
+          },
+          {
+            "id": 8843,
+            "name": "WEB SLINGERS: A Spider-Man Adventure",
+            "history": []
+          },
+          {
+            "id": 10907,
+            "name": "WEB SLINGERS: A Spider-Man Adventure Single Rider",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 118,
+        "name": "Buena Vista Street",
+        "rides": [
+          {
+            "id": 873,
+            "name": "Red Car Trolley",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 120,
+        "name": "Cars Land",
+        "rides": [
+          {
+            "id": 13961,
+            "name": "Luigi's Rollickin' Roadsters",
+            "history": []
+          },
+          {
+            "id": 315,
+            "name": "Mater's Junkyard Jamboree",
+            "history": []
+          },
+          {
+            "id": 295,
+            "name": "Radiator Springs Racers",
+            "history": []
+          },
+          {
+            "id": 10904,
+            "name": "Radiator Springs Racers Single Rider",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 121,
+        "name": "Grizzly Peak",
+        "rides": [
+          {
+            "id": 302,
+            "name": "Grizzly River Run",
+            "history": []
+          },
+          {
+            "id": 293,
+            "name": "Redwood Creek Challenge Trail",
+            "history": []
+          },
+          {
+            "id": 312,
+            "name": "Soarin' Over California",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 122,
+        "name": "Hollywood Land",
+        "rides": [
+          {
+            "id": 321,
+            "name": "Animation Academy",
+            "history": []
+          },
+          {
+            "id": 6440,
+            "name": "Mickey's PhilharMagic",
+            "history": []
+          },
+          {
+            "id": 291,
+            "name": "Monsters, Inc. Mike & Sulley to the Rescue!",
+            "history": []
+          },
+          {
+            "id": 868,
+            "name": "Sorcerer's Workshop",
+            "history": []
+          },
+          {
+            "id": 294,
+            "name": "Turtle Talk with Crush",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 359,
+        "name": "Paradise Gardens Park",
+        "rides": [
+          {
+            "id": 298,
+            "name": "Golden Zephyr",
+            "history": []
+          },
+          {
+            "id": 319,
+            "name": "Goofy's Sky School",
+            "history": []
+          },
+          {
+            "id": 301,
+            "name": "Silly Symphony Swings",
+            "history": []
+          },
+          {
+            "id": 10905,
+            "name": "Silly Symphony Swings Single Rider",
+            "history": []
+          },
+          {
+            "id": 316,
+            "name": "The Little Mermaid - Ariel's Undersea Adventure",
+            "history": []
+          },
+          {
+            "id": 11528,
+            "name": "World of Color – ONE",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 124,
+        "name": "Pixar Pier",
+        "rides": [
+          {
+            "id": 13960,
+            "name": "Games of Pixar Pier",
+            "history": []
+          },
+          {
+            "id": 322,
+            "name": "Incredicoaster",
+            "history": []
+          },
+          {
+            "id": 10906,
+            "name": "Incredicoaster Single Rider",
+            "history": []
+          },
+          {
+            "id": 6643,
+            "name": "Inside Out Emotional Whirlwind",
+            "history": []
+          },
+          {
+            "id": 310,
+            "name": "Jessie's Critter Carousel",
+            "history": []
+          },
+          {
+            "id": 300,
+            "name": "Jumpin' Jellyfish",
+            "history": []
+          },
+          {
+            "id": 311,
+            "name": "Pixar Pal-A-Round - Swinging",
+            "history": []
+          },
+          {
+            "id": 5557,
+            "name": "Pixar Pal-A-Round – Non-Swinging",
+            "history": []
+          },
+          {
+            "id": 313,
+            "name": "Toy Story Midway Mania!",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 960,
+        "name": "San Fransokyo Square",
+        "rides": [
+          {
+            "id": 13959,
+            "name": "The Bakery Tour",
+            "history": []
+          }
+        ]
+      }
+    ],
+    "rides": []
+  },
+  "disneyland": {
+    "lands": [
+      {
+        "id": 109,
+        "name": "Adventureland",
+        "rides": [
+          {
+            "id": 12428,
+            "name": "Adventureland Treehouse inspired by Walt Disney’s Swiss Family Robinson",
+            "history": []
+          },
+          {
+            "id": 326,
+            "name": "Indiana Jones™ Adventure",
+            "history": []
+          },
+          {
+            "id": 296,
+            "name": "Jungle Cruise",
+            "history": []
+          },
+          {
+            "id": 288,
+            "name": "Walt Disney's Enchanted Tiki Room",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 110,
+        "name": "Bayou Country",
+        "rides": [
+          {
+            "id": 304,
+            "name": "Davy Crockett's Explorer Canoes",
+            "history": []
+          },
+          {
+            "id": 306,
+            "name": "The Many Adventures of Winnie the Pooh",
+            "history": []
+          },
+          {
+            "id": 14168,
+            "name": "Tiana's Bayou Adventure",
+            "history": []
+          },
+          {
+            "id": 14326,
+            "name": "Tiana's Bayou Adventure Single Rider",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 111,
+        "name": "Fantasyland",
+        "rides": [
+          {
+            "id": 307,
+            "name": "\"it's a small world\"",
+            "history": []
+          },
+          {
+            "id": 285,
+            "name": "Alice in Wonderland",
+            "history": []
+          },
+          {
+            "id": 303,
+            "name": "Casey Jr. Circus Train",
+            "history": []
+          },
+          {
+            "id": 275,
+            "name": "Dumbo the Flying Elephant",
+            "history": []
+          },
+          {
+            "id": 277,
+            "name": "King Arthur Carrousel",
+            "history": []
+          },
+          {
+            "id": 278,
+            "name": "Mad Tea Party",
+            "history": []
+          },
+          {
+            "id": 279,
+            "name": "Matterhorn Bobsleds",
+            "history": []
+          },
+          {
+            "id": 6711,
+            "name": "Meet Disney Princesses at Royal Hall",
+            "history": []
+          },
+          {
+            "id": 280,
+            "name": "Mr. Toad's Wild Ride",
+            "history": []
+          },
+          {
+            "id": 281,
+            "name": "Peter Pan's Flight",
+            "history": []
+          },
+          {
+            "id": 282,
+            "name": "Pinocchio's Daring Journey",
+            "history": []
+          },
+          {
+            "id": 687,
+            "name": "Sleeping Beauty Castle Walkthrough",
+            "history": []
+          },
+          {
+            "id": 283,
+            "name": "Snow White's Enchanted Wish",
+            "history": []
+          },
+          {
+            "id": 305,
+            "name": "Storybook Land Canal Boats",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 112,
+        "name": "Frontierland",
+        "rides": [
+          {
+            "id": 323,
+            "name": "Big Thunder Mountain Railroad",
+            "history": []
+          },
+          {
+            "id": 679,
+            "name": "Frontierland Shootin' Exposition",
+            "history": []
+          },
+          {
+            "id": 456,
+            "name": "Mark Twain Riverboat",
+            "history": []
+          },
+          {
+            "id": 331,
+            "name": "Pirate's Lair on Tom Sawyer Island",
+            "history": []
+          },
+          {
+            "id": 328,
+            "name": "Sailing Ship Columbia",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 113,
+        "name": "Main Street U.S.A",
+        "rides": [
+          {
+            "id": 674,
+            "name": "Disneyland Railroad",
+            "history": []
+          },
+          {
+            "id": 686,
+            "name": "Main Street Cinema",
+            "history": []
+          },
+          {
+            "id": 691,
+            "name": "Main Street Vehicles",
+            "history": []
+          },
+          {
+            "id": 695,
+            "name": "The Disney Gallery",
+            "history": []
+          },
+          {
+            "id": 690,
+            "name": "The Disneyland Story presenting Great Moments with Mr. Lincoln",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 114,
+        "name": "Mickey's Toontown",
+        "rides": [
+          {
+            "id": 324,
+            "name": "Chip 'n' Dale's GADGETcoaster",
+            "history": []
+          },
+          {
+            "id": 13814,
+            "name": "Donald's Duck Pond",
+            "history": []
+          },
+          {
+            "id": 11980,
+            "name": "Goofy's How-to-Play Yard",
+            "history": []
+          },
+          {
+            "id": 11526,
+            "name": "Mickey & Minnie's Runaway Railway",
+            "history": []
+          },
+          {
+            "id": 709,
+            "name": "Mickey's House and Meet Mickey Mouse",
+            "history": []
+          },
+          {
+            "id": 684,
+            "name": "Minnie's House",
+            "history": []
+          },
+          {
+            "id": 332,
+            "name": "Roger Rabbit's Car Toon Spin",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 115,
+        "name": "New Orleans Square",
+        "rides": [
+          {
+            "id": 13958,
+            "name": "Haunted Mansion",
+            "history": []
+          },
+          {
+            "id": 289,
+            "name": "Pirates of the Caribbean",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 332,
+        "name": "Star Wars: Galaxy's Edge",
+        "rides": [
+          {
+            "id": 6339,
+            "name": "Millennium Falcon: Smugglers Run",
+            "history": []
+          },
+          {
+            "id": 10903,
+            "name": "Millennium Falcon: Smugglers Run Single Rider",
+            "history": []
+          },
+          {
+            "id": 6340,
+            "name": "Star Wars: Rise of the Resistance",
+            "history": []
+          }
+        ]
+      },
+      {
+        "id": 117,
+        "name": "Tomorrowland",
+        "rides": [
+          {
+            "id": 287,
+            "name": "Astro Orbitor",
+            "history": []
+          },
+          {
+            "id": 317,
+            "name": "Autopia",
+            "history": []
+          },
+          {
+            "id": 273,
+            "name": "Buzz Lightyear Astro Blasters",
+            "history": []
+          },
+          {
+            "id": 274,
+            "name": "Disneyland Monorail",
+            "history": []
+          },
+          {
+            "id": 276,
+            "name": "Finding Nemo Submarine Voyage",
+            "history": []
+          },
+          {
+            "id": 284,
+            "name": "Space Mountain",
+            "history": []
+          },
+          {
+            "id": 286,
+            "name": "Star Tours - The Adventures Continue",
+            "history": []
+          }
+        ]
+      }
+    ],
+    "rides": []
+  }
+}
