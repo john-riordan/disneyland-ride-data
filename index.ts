@@ -44,7 +44,7 @@ function buildNewData(
       if (!lastestRideData) continue;
       if (
         lastestRideData.last_updated ===
-        ride.history[ride.history.length - 1].last_updated
+        ride.history[ride.history.length - 1]?.last_updated
       )
         continue;
       ride.history.push({
@@ -67,7 +67,7 @@ function buildNewData(
       if (!lastestRideData) continue;
       if (
         lastestRideData.last_updated ===
-        ride.history[ride.history.length - 1].last_updated
+        ride.history[ride.history.length - 1]?.last_updated
       )
         continue;
       ride.history.push({
