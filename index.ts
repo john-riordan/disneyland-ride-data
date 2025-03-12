@@ -1,11 +1,12 @@
-import { S3Client } from "bun";
+import { S3Client, type S3File } from "bun";
 
 const client = new S3Client({
-  accessKeyId: "1e916d22b3721ff8d74a7b0acc6c5bdc",
-  secretAccessKey:
-    "840ae25f0e7633cb5c678ec6ac4fa2d66cecd4c7306b519b78d81d33b7ddbc82",
-  bucket: "disneyland-ride-data",
-  endpoint: "https://4c4a97248c0a97b4725084e66e0dc734.r2.cloudflarestorage.com", // Cloudflare R2
+  accessKeyId: process.env.S3_ACCESS_KEY_ID!,
+  secretAccessKey: process.env.S3_SECRET_ACCESS_KEY!,
+  bucket: process.env.S3_BUCKET_NAME || "disneyland-ride-data",
+  endpoint:
+    process.env.S3_ENDPOINT ||
+    "https://4c4a97248c0a97b4725084e66e0dc734.r2.cloudflarestorage.com", // Cloudflare R2
 });
 
 const s3file: S3File = client.file("ride-data.json");
@@ -19,8 +20,13 @@ const disneylandReq = await fetch(
 );
 const disneylandData = (await disneylandReq.json()) as RideData;
 
-const newData = buildNewData(json, dcaData, disneylandData);
-await s3file.write(JSON.stringify(newData));
+const dcaRidesOpen = ridesOpen(dcaData);
+const disneylandRidesOpen = ridesOpen(disneylandData);
+
+if (dcaRidesOpen + disneylandRidesOpen) {
+  const newData = buildNewData(json, dcaData, disneylandData);
+  await s3file.write(JSON.stringify(newData));
+}
 
 function buildNewData(
   existingData: RideData,
@@ -32,7 +38,6 @@ function buildNewData(
 
   // California Adventure
   const dcaLatestRides = newDcaData.lands.map((land) => land.rides).flat();
-  const dcaRidesOpen = dcaLatestRides.filter((ride) => ride.is_open).length;
   for (const land of dca.lands) {
     for (const ride of land.rides) {
       const lastestRideData = dcaLatestRides.find((r) => r.id === ride.id);
@@ -54,9 +59,6 @@ function buildNewData(
   const disneylandLatestRides = newDisneylandData.lands
     .map((land) => land.rides)
     .flat();
-  const disneylandRidesOpen = disneylandLatestRides.filter(
-    (ride) => ride.is_open
-  ).length;
   for (const land of disneyland.lands) {
     for (const ride of land.rides) {
       const lastestRideData = disneylandLatestRides.find(
@@ -78,4 +80,11 @@ function buildNewData(
 
   data.updatedAt = new Date().toISOString();
   return data;
+}
+
+function ridesOpen(parkData: RideData) {
+  return parkData.lands
+    .map((land) => land.rides)
+    .flat()
+    .filter((ride) => ride.is_open).length;
 }

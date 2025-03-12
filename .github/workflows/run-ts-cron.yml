@@ -2,12 +2,18 @@ name: Run TypeScript Cron Job with Bun
 
 on:
   schedule:
-    - cron: "*/5 * * * *" # Runs every 5 minutes
+    - cron: "*/10 * * * *" # Runs every 10 minutes
   workflow_dispatch: # Allows manual trigger
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
+
+    env:
+      S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+      S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+      S3_BUCKET_NAME: "disneyland-ride-data"
+      S3_ENDPOINT: "https://4c4a97248c0a97b4725084e66e0dc734.r2.cloudflarestorage.com"
 
     steps:
       - name: Checkout Repository
