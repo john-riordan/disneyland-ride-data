@@ -23,7 +23,7 @@ const disneylandData = (await disneylandReq.json()) as RideData;
 const dcaRidesOpen = ridesOpen(dcaData);
 const disneylandRidesOpen = ridesOpen(disneylandData);
 
-if (dcaRidesOpen + disneylandRidesOpen) {
+if (dcaRidesOpen + disneylandRidesOpen >= 15) {
   const newData = buildNewData(json, dcaData, disneylandData);
   await s3file.write(JSON.stringify(newData));
 }
