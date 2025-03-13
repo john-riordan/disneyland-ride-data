@@ -47,6 +47,8 @@ function buildNewData(
         ride.history[ride.history.length - 1]?.last_updated
       )
         continue;
+      // Cap the history at 150
+      if (ride.history.length === 150) ride.history.shift();
       ride.history.push({
         is_open: lastestRideData.is_open,
         wait_time: lastestRideData.wait_time,
@@ -70,6 +72,8 @@ function buildNewData(
         ride.history[ride.history.length - 1]?.last_updated
       )
         continue;
+      // Cap the history at 150
+      if (ride.history.length === 150) ride.history.shift();
       ride.history.push({
         is_open: lastestRideData.is_open,
         wait_time: lastestRideData.wait_time,

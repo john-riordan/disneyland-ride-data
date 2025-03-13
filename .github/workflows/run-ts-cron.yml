@@ -2,7 +2,7 @@ name: Fetch and update Disneyland & DCA ride data
 
 on:
   schedule:
-    - cron: "*/10 15-23,0-7 * * *" # Runs every 10 minutes between 8 AM and midnight PST (15:00-07:00 UTC)
+    - cron: "*/20 15-23,0-7 * * *" # Runs every 20 minutes between 8 AM and midnight PST (15:00-07:00 UTC)
   workflow_dispatch: # Allows manual trigger
 
 jobs:
