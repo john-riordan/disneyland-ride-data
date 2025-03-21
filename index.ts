@@ -12,20 +12,24 @@ const client = new S3Client({
 const s3file: S3File = client.file("ride-data.json");
 const json = (await s3file.json()) as RideData;
 
-const dcaReq = await fetch("https://queue-times.com/parks/17/queue_times.json");
-const dcaData = (await dcaReq.json()) as RideData;
+if (json?.updatedAt) {
+  const dcaReq = await fetch(
+    "https://queue-times.com/parks/17/queue_times.json"
+  );
+  const dcaData = (await dcaReq.json()) as RideData;
 
-const disneylandReq = await fetch(
-  "https://queue-times.com/parks/16/queue_times.json"
-);
-const disneylandData = (await disneylandReq.json()) as RideData;
+  const disneylandReq = await fetch(
+    "https://queue-times.com/parks/16/queue_times.json"
+  );
+  const disneylandData = (await disneylandReq.json()) as RideData;
 
-const dcaRidesOpen = ridesOpen(dcaData);
-const disneylandRidesOpen = ridesOpen(disneylandData);
+  const dcaRidesOpen = ridesOpen(dcaData);
+  const disneylandRidesOpen = ridesOpen(disneylandData);
 
-if (dcaRidesOpen + disneylandRidesOpen >= 15) {
-  const newData = buildNewData(json, dcaData, disneylandData);
-  await s3file.write(JSON.stringify(newData));
+  if (dcaRidesOpen + disneylandRidesOpen >= 15) {
+    const newData = buildNewData(json, dcaData, disneylandData);
+    await s3file.write(JSON.stringify(newData));
+  }
 }
 
 function buildNewData(
